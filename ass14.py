@@ -19,17 +19,15 @@ class ShoppingCart():
         return sum
 
 
-
-
 kalata = ShoppingCart()
 kalata.add_item("Zeti", 4)
-kalata.add_item("kitri", 5)
-kalata.add_item("pmidor", 3)
-kalata.add_item("ketesa", 2)
-kalata.add_item("saba", 2)
+kalata.add_item("Kitri", 5)
+kalata.add_item("Pomidori", 3)
+kalata.add_item("Xaxvi", 2)
+kalata.add_item("Puri", 2)
 print(kalata.items)
-kalata.rm_item("kitri")
+kalata.rm_item("Kitri")
 print(kalata.items)
-kalata.rm_item("saba")
+kalata.rm_item("Puri")
 print(kalata.currentitems())
 print(kalata.calculatetotal())
