@@ -13,12 +13,12 @@ class User:
         self.posts.append(post)
         return post
 
-    def comment_on_post(self, post, content):
+    def comment_on_post(self, post: 'Post', content):
         comment = Comment(content, self)
         post.add_comment(comment)
         return comment
 
-    def like_post(self, post):
+    def like_post(self, post: 'Post'):
         post.add_like(self)
 
     def like_comment(self, comment):
